@@ -7,38 +7,43 @@ $(document).ready(function())
 
 //and hits the submit button.
 
-var cityName = ()
+function ChangePageBackground(){
+var textInput;
+textInput = document.getElementByID("#city-type");
+textInput.focus();
 
 $ ('#submit-btn').click (changePageBackground(){
-	$('input:text').val(cityName)
+	$('#city-type').val(cityName)
 }
 
-
-event input
-
-function checkCityName(){
-	//code to check the city name
-
-	var city = document.getElementByClass('')
-}
+window.addEventListener('load', ChangePageBackground);
 
 
-function changePageBackground (){
-	city = $(.austin);
-	city = $(.la);
-	city = $(.nyc);
-	city = $(.sf);
-	city = $(.sydney);
-	city = $(.citipix_skyline)
+// event input
 
-	if (city){
-		event.preventDefault();
-		$('.austin').html(Austin);
-		$('body').removeClass();
-		$('body').css('.austin');
-	}
+// function checkCityName(){
+// 	//code to check the city name
 
-}
+// 	var city = document.getElementByClass('')
+// }
+
+
+// function changePageBackground (){
+// 	city = $(.austin);
+// 	city = $(.la);
+// 	city = $(.nyc);
+// 	city = $(.sf);
+// 	city = $(.sydney);
+// 	city = $(.citipix_skyline)
+
+// 	if (city){
+// 		event.preventDefault();
+// 		$('.austin').html(Austin);
+// 		$('body').removeClass();
+// 		$('body').css('.austin');
+// 	}
+
+// }
 
 
 
