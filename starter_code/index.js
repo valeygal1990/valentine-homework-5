@@ -1,61 +1,66 @@
 $(document).ready(function())
 
 
-//User enters a city name in the container 
+//User enters a city name in the form
 
 //event input city name
 
 //and hits the submit button.
 
-function ChangePageBackground(){
-var textInput;
-textInput = document.getElementByID("#city-type");
-textInput.focus();
-
-$ ('#submit-btn').click (changePageBackground(){
-	$('#city-type').val(cityName)
-}
-
-window.addEventListener('load', ChangePageBackground);
-
-
-// event input
-
-// function checkCityName(){
-// 	//code to check the city name
-
-// 	var city = document.getElementByClass('')
-// }
-
-
-// function changePageBackground (){
-// 	city = $(.austin);
-// 	city = $(.la);
-// 	city = $(.nyc);
-// 	city = $(.sf);
-// 	city = $(.sydney);
-// 	city = $(.citipix_skyline)
-
-// 	if (city){
-// 		event.preventDefault();
-// 		$('.austin').html(Austin);
-// 		$('body').removeClass();
-// 		$('body').css('.austin');
-// 	}
-
-// }
-
-
-
-
-
 //User clicks on submit or presses enter on their keyboard
+
 //The entire webpage refreshes
+
 //Background image changes to the image of the corresponding city.
 
+var cityName = "#city-type"
 
+$('#city-type').submit(changeBackground);
 
+function changeBackground() {
+    // The stuff I want to do when my form submits goes here
+    if (cityName == "Austin"){
+    	event.preventDefault();
+    	$('body').removeClass();
+    	$('body').css('Background','.austin');
+    	$('#cityName').html('Austin');
+    	console.log ('Austin Background');
 
+    } else if (cityName == 'Los Angeles'){
+    	event.preventDefault();
+    	$('body').removeClass();
+    	$('body').css('Background','.la');
+    	$('#cityName').html('Los Angeles');
+    	console.log ('LA Background');
+
+    } else if (cityName == 'New York'){
+    	event.preventDefault();
+    	$('body').removeClass();
+    	$('body').css('Background','.nyc');
+    	$('#cityName').html('New York');
+    	console.log ('NYC Background');
+
+    } else if (cityName == 'San Francisco'){
+    	event.preventDefault();
+    	$('body').removeClass();
+    	$('body').css('Background','.sf');
+    	$('#cityName').html('San Francisco');
+    	console.log ('SF Background');
+
+    } else if (cityName == 'Sydney'){
+    	event.preventDefault();
+    	$('body').removeClass();
+    	$('body').css('Background','.sydney');
+    	$('#cityName').html('Sydney');
+    	console.log ('Sydney Background');
+
+    } else if (cityName != 'Austin' 'Los Angeles' 'New York' 'San Francisco' 'Sydney'){
+    	event.preventDefault();
+    	$('body').removeClass();
+    	$('body').css('Background');
+    	console.log ('Citipix_skyline');
+    }
+}
 
 
 
