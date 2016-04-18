@@ -1,4 +1,4 @@
-$(document).ready(function()){
+$(document).ready(function(){
 
 
 //User enters a city name in the form
@@ -13,55 +13,62 @@ $(document).ready(function()){
 
 //Background image changes to the image of the corresponding city.
 
-var cityName = "#city-type"
 
 
 
-$('cityName').submit(changeBackground)
+
+
+
+$('form').submit(changeBackground);
 
 function changeBackground() {
+
+	var cityName = $('#city-type').val();
     // The stuff I want to do when my form submits goes here
     if (cityName == "Austin"){
     	event.preventDefault();
     	$('body').removeClass();
-    	$('body').css('.austin');
+    	$('body').addClass('austin');
     	// $('#cityName').html('Austin');
     	console.log ('Austin Background');
+    	console.log (cityName);
 
     } else if (cityName == 'Los Angeles'){
     	event.preventDefault();
     	$('body').removeClass();
-    	$('body').css('.la');
+    	$('body').addClass('la');
     	// $('#cityName').html('Los Angeles');
     	console.log ('LA Background');
+    	console.log (cityName);
 
     } else if (cityName == 'New York'){
     	event.preventDefault();
     	$('body').removeClass();
-    	$('body').css('.nyc');
+    	$('body').addClass('nyc');
     	// $('#cityName').html('New York');
     	console.log ('NYC Background');
-
+		console.log (cityName);
     } else if (cityName == 'San Francisco'){
     	event.preventDefault();
     	$('body').removeClass();
-    	$('body').css('.sf');
+    	$('body').addClass('sf');
     	// $('#cityName').html('San Francisco');
     	console.log ('SF Background');
-
+    	console.log (cityName);
     } else if (cityName == 'Sydney'){
     	event.preventDefault();
     	$('body').removeClass();
-    	$('body').css('.sydney');
+    	$('body').addClass('sydney');
     	// $('#cityName').html('Sydney');
     	console.log ('Sydney Background');
-
+    	console.log (cityName);
     // } else (cityName != 'Austin' 'Los Angeles' 'New York' 'San Francisco' 'Sydney'){
-    	} else (){
+    	} else {
     	event.preventDefault();
     	$('body').removeClass();
     	// $('body').css('Background');
     	console.log ('Citipix_skyline');
+    	console.log (cityName);
     }
 }
 
