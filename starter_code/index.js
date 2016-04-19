@@ -25,7 +25,7 @@ function changeBackground() {
 
 	var cityName = $('#city-type').val();
     // The stuff I want to do when my form submits goes here
-    if (cityName == "Austin"){
+    if (cityName == 'Austin'||'ATX'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('austin');
@@ -33,7 +33,7 @@ function changeBackground() {
     	console.log ('Austin Background');
     	console.log (cityName);
 
-    } else if (cityName == 'Los Angeles'){
+    } else if (cityName == 'Los Angeles'|| 'LA'||'LAX'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('la');
@@ -41,21 +41,21 @@ function changeBackground() {
     	console.log ('LA Background');
     	console.log (cityName);
 
-    } else if (cityName == 'New York'){
+    } else if (cityName == 'New York'||'NYC'|| 'New York City'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('nyc');
     	// $('#cityName').html('New York');
     	console.log ('NYC Background');
 		console.log (cityName);
-    } else if (cityName == 'San Francisco'){
+    } else if (cityName == 'San Francisco'|| 'SF'||'Bay Area'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('sf');
     	// $('#cityName').html('San Francisco');
     	console.log ('SF Background');
     	console.log (cityName);
-    } else if (cityName == 'Sydney'){
+    } else if (cityName == 'Sydney'||'SYD'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('sydney');
