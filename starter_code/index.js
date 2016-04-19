@@ -23,7 +23,7 @@ $('form').submit(changeBackground);
 
 function changeBackground() {
 
-	var cityName = $('#city-type').val();
+	var cityName = $.'trim'($('#city-type').val().toUpperCase());
     // The stuff I want to do when my form submits goes here
     // For Austin background
     if (cityName == 'Austin'||cityName=='ATX'){
