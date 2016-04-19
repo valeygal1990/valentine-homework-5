@@ -25,44 +25,47 @@ function changeBackground() {
 
 	var cityName = $('#city-type').val();
     // The stuff I want to do when my form submits goes here
-    if (cityName == 'Austin'||'ATX'){
+    // For Austin background
+    if (cityName == 'Austin'||cityName=='ATX'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('austin');
     	// $('#cityName').html('Austin');
     	console.log ('Austin Background');
     	console.log (cityName);
-
-    } else if (cityName == 'Los Angeles'|| 'LA'||'LAX'){
+    	//for LA background
+    } else if (cityName == 'Los Angeles'||cityName=='LA'||cityName=='LAX'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('la');
     	// $('#cityName').html('Los Angeles');
     	console.log ('LA Background');
     	console.log (cityName);
-
-    } else if (cityName == 'New York'||'NYC'|| 'New York City'){
+    	//for NYC background
+    } else if (cityName == 'New York'||cityName=='NYC'||cityName=='New York City'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('nyc');
     	// $('#cityName').html('New York');
     	console.log ('NYC Background');
 		console.log (cityName);
-    } else if (cityName == 'San Francisco'|| 'SF'||'Bay Area'){
+		//for SF background
+    } else if (cityName == 'San Francisco'||cityName=='SF'||cityName=='Bay Area'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('sf');
     	// $('#cityName').html('San Francisco');
     	console.log ('SF Background');
     	console.log (cityName);
-    } else if (cityName == 'Sydney'||'SYD'){
+    	//for Sydney Background
+    } else if (cityName == 'Sydney'||cityName=='SYD'){
     	event.preventDefault();
     	$('body').removeClass();
     	$('body').addClass('sydney');
     	// $('#cityName').html('Sydney');
     	console.log ('Sydney Background');
     	console.log (cityName);
-    // } else (cityName != 'Austin' 'Los Angeles' 'New York' 'San Francisco' 'Sydney'){
+    	//for none
     	} else {
     	event.preventDefault();
     	$('body').removeClass();
